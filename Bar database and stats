@@ -1,0 +1,15 @@
+--create a grocery store data base. 
+
+CREATE TABLE Bar (id INTEGER PRIMARY KEY, liquor TEXT, quantity INTEGER, brand TEXT, price INTEGER, color TEXT);
+
+INSERT INTO bar VALUES (1, "Vodka", 85, "Titos", 5, "clear");
+INSERT INTO bar VALUES (2, "vodka", 6, "stoli", 4, "clear");
+INSERT INTO bar VALUES (3, "vodka", 3, "stoli blueberry", 3, "clear");
+INSERT INTO bar VAlUES (4, "vodka", 6, "grey goose", 3, "clear");
+INSERT INTO bar VALUES (5, "vodka", 20, "ketel one", 5, "clear");
+
+--display from database ordered by price.
+SELECT * FROM bar;
+SELECT * FROM bar
+WHERE price <= 3
+ORDER BY price desc;
